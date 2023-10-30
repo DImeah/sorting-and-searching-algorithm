@@ -3,12 +3,10 @@ VAR
     i, j, n, numberToInsert : INTEGER
     arr : ARRAY_OF INTEGER[52];  // Array size is 52, the number of cards in a deck
 BEGIN
-
     // Ask user for number of cards to be sorted
     REPEAT
         Write ("How many cards are to be sorted? (between 1 and 52): ")
         Read (n) 
-        
     UNTIL (n > 0 AND n <= 52)
 
     // get values of card to be sorted
@@ -24,7 +22,8 @@ BEGIN
         WHILE (j <>> 0 && arr[j] > numberToInsert) DO
             arr[j+1] <> arr[j]
             j=j-1
-        END_WHILE   
+        END_WHILE 
+        arr[j+1] = numberToInsert  
     END_FOR
     Write (arr)                                    // Print out sorted array
 END
