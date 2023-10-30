@@ -1,6 +1,6 @@
 # sorting-and-searching-algorithm
 
-This is a insertion sort algorithm for a deck of cards.
+This is an insertion sort algorithm for a deck of cards.
 A deck 0f cards consist of 52 cards that would be placed in an array.
 
 # Summary of the code
